@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    border: 2px solid black;
+    margin: 1px;
+    height: 8vh;
+}
+
+.logo{
+    height:8vh;
+    width: 5em;
+}
+
+.navbar > ul{
+    height: 3.5vh;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+.navbar > ul > li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+    margin: 2vh 5vh;
+    height: 3vh;
+}
+
+.search-input{
+    width: 90%;
+    height: 3vh;
+}
