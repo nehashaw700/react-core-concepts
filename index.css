@@ -25,6 +25,10 @@
     cursor: pointer;
 }
 
+.body{
+    height:1000vh;
+}
+
 .search{
     display: flex;
     justify-content: center;
@@ -36,4 +40,15 @@
 .search-input{
     width: 90%;
     height: 3vh;
+}
+
+.scroller{
+    height: 500vh;
+}
+
+.counter {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }

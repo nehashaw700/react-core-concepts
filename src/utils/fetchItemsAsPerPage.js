@@ -2,8 +2,8 @@ const fetchItems = (page) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             const result = [];
-            for(let i = 1; i <= 10; i++){
-                result.push('Items ' + ((page - 1) * 10 + i));
+            for(let i = 1; i <= 20; i++){
+                result.push('Item ' + ((page - 1) * 20 + i));
             }
 
             resolve(result);
