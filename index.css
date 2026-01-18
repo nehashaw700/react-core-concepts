@@ -18,11 +18,13 @@
     display: flex;
     justify-content: space-around;
     padding: 2px;
+    text-decoration: none;
 }
 
 .navbar > ul > li{
     padding: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .body{
@@ -51,4 +53,14 @@
     width: 50%;
     display: flex;
     justify-content: space-around;
+}
+
+.todo-input{
+    display: flex;
+}
+
+.todo-list{
+    border: 2px solid black;
+    background-color: grey;
+    margin: auto;
 }
