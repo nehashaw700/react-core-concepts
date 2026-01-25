@@ -64,3 +64,13 @@
     background-color: grey;
     margin: auto;
 }
+
+.emp-table{
+    border: 2px solid grey;
+    padding: 2px;
+}
+
+.paginated-buttons > button {
+    background-color: grey;
+    margin: 3px;
+}
