@@ -31,7 +31,7 @@ const Pagination = () => {
         if (sortConfig) {
             return sortConfig?.orderBy === 'asc' ? "↓" : "↑";
         }
-
+        
         return "⇅";
     }
 

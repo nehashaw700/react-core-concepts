@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     background-color: grey;
@@ -7,31 +7,33 @@
     height: 8vh;
 }
 
-.logo{
-    height:8vh;
+.logo {
+    height: 8vh;
     width: 5em;
 }
 
-.navbar > ul{
-    height: 3.5vh;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 2px;
-    text-decoration: none;
-}
-
-.navbar > ul > li{
+.navbar>ul>li {
     padding: 5px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.body{
-    height:1000vh;
+.hamburger {
+    height: 5vh;
+    width: 5vw;
+    margin: 8px;
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
-.search{
+.body {
+    height: 1000vh;
+}
+
+.search {
     display: flex;
     justify-content: center;
     /* width: 80%; */
@@ -39,12 +41,12 @@
     height: 3vh;
 }
 
-.search-input{
+.search-input {
     width: 90%;
     height: 3vh;
 }
 
-.scroller{
+.scroller {
     height: 500vh;
 }
 
@@ -55,22 +57,83 @@
     justify-content: space-around;
 }
 
-.todo-input{
+.todo-input {
     display: flex;
 }
 
-.todo-list{
+.todo-list {
     border: 2px solid black;
     background-color: grey;
     margin: auto;
 }
 
-.emp-table{
+.emp-table {
     border: 2px solid grey;
     padding: 2px;
 }
 
-.paginated-buttons > button {
+.paginated-buttons>button {
     background-color: grey;
     margin: 3px;
+}
+
+@media (min-width:768px) {
+    .menu {
+        height: 3.5vh;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 2px;
+        text-decoration: none;
+    }
+
+    .menuOpen{
+        height: 3.5vh;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 2px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        height: 5vh;
+        width: 5vw;
+        margin: 8px;
+        border: 1px solid black;
+        color: rgb(233, 218, 218);
+        cursor: pointer;
+    }
+
+    .menu {
+        flex-direction: column;
+        list-style: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        color: white;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        align-items: center;
+    }
+
+    .menuOpen {
+        list-style: none;
+        flex-direction: column;
+        background: rgb(241, 222, 222);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        overflow: hidden;
+        align-items: center;
+        max-height: 12vh;
+        transition: max-height 0.3s ease;
+
+    }
 }
