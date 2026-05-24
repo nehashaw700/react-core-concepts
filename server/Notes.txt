@@ -1,0 +1,10 @@
+/* MONGO_DB
+Go to Mongo DB website. login. 
+Create a free M0 cluster
+create a user
+Get the connection string URL (using connect with Compass)
+Install Mongo DB Compass (for DB UI)
+
+download npm-package: mongodb
+Go to https://mongodb.github.io/node-mongodb-native/6.21/ website for database connection code // Official documentation
+*/ 
