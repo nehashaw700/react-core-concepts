@@ -1,5 +1,4 @@
 import { validate } from "graphql";
-import { GridFSBucket } from "mongodb";
 import mongoose from "mongoose";
 import validator from "validator";
 import jwt from 'jsonwebtoken';
